@@ -27,7 +27,7 @@ from pystoi.stoi import stoi
 fs, clean = read('path/to/clean/audio')
 fs, den = read('path/to/denoised/audio')
 
-# Clean and den should have the same length, and be 1D
+# Clean 和 den必须为长度相同、1D的numpy类型
 d = stoi(clean, den, fs, extended=False)
 ```
 
